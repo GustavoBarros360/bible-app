@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import { HomePage } from "./src/screens/home";
+import { HomePage } from "@screens/home";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 export default function App() {

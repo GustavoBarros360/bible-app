@@ -35,6 +35,10 @@ interface ApiClient extends AxiosInstance {
 }
 
 export const api: ApiClient = axios.create({
+  headers: {
+    Authorization:
+      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlRodSBPY3QgMTkgMjAyMyAyMzowODoxMCBHTVQrMDAwMC5ndXN0YXZvYmFycm9zMjAwMUBnbWFpbC5jb20iLCJpYXQiOjE2OTc3NTY4OTB9.hKcKjFdkLKzmb3ljH25013bX0rst7NuAg5sgfInl2yk",
+  },
   baseURL: API_BASE_URL,
   timeout: 10000,
 });
